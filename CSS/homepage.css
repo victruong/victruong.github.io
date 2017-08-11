@@ -2,19 +2,95 @@ body{
   background-color: #7a7a7a;
 }
 
-
-
-.topcorner{
-    position:absolute;
-    top: 20px;
-    right: 15px;
+.firstlink a {
+  color: blue;
+  text-decoration: none; /* no underline */
+}
+.firstlink{
+    position: relative;
+    text-align: center;
     color: white;
     font-size: 16;
+    font-family: cursive;
+
+ }
+ .firstlink a {
+     -webkit-appearance: button;
+     -moz-appearance: button;
+     appearance: button;
+
+     text-decoration: none;
+     color: black;
  }
 
-h1{
-  text-align: left;
-  font-family: 'Montserrat', sans-serif;
+
+
+/*
+.secondlink{
+  position:absolute;
+  top: 20px;
+  right: 100px;
   color: white;
   font-size: 16;
+  font-family: fantasy;
+}
+*/
+
+
+h1{
+  text-align: center;
+  margin-top: 10%;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 44px;
+}
+
+h2{
+  text-align: center;
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 36px;
+}
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #000000 50%, #5fe8c1 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
